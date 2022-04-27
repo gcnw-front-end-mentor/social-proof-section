@@ -1,0 +1,55 @@
+/* font-family: 'League Spartan', sans-serif; */
+
+* {
+    margin: 0; 
+    padding: 0;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.topSection {
+    display: flex;
+    background-image: url("./images/bg-pattern-top-desktop.svg");
+}
+
+.mainText h1 {
+    color: hsl(300, 43%, 22%);
+}
+
+.mainText p {
+    color: hsl(303, 10%, 53%);
+}
+
+.ratingBox {
+    background-color: hsl(300, 24%, 96%);
+}
+
+.bottomSection {
+    display: flex;
+    background-image: url("./images/bg-pattern-bottom-desktop.svg");
+}
+
+.buyerCard {
+    background-color: hsl(300, 43%, 22%);
+}
+
+.buyerCard span {
+    color: hsl(333, 80%, 67%);
+}
+
