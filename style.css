@@ -15,9 +15,10 @@ html {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin: 100px;
     height: 100vh;
+    width: 100%;
 }
 
 .topContainer {
@@ -26,8 +27,7 @@ main {
     background-image: url("./images/bg-pattern-top-desktop.svg");
     background-size: cover;
     height: 50%;
-    width: 1175px;
-
+    width: 1200px;
 }
 
 .topSection {
@@ -38,7 +38,7 @@ main {
 }
 
 .mainText {
-    width: 430px;
+    width: 40%;
 }
 
 .mainText h1 {
@@ -48,46 +48,59 @@ main {
 
 .mainText p {
     color: hsl(303, 10%, 53%);
+    margin: 40px 0px;
     font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.ratingsSection {
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .ratingBox {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    font-weight: 700;
     height: 55px;
     width: 435px;
     /* margin-top: 10px; */
+    color: hsl(300, 43%, 22%);
     background-color: hsl(300, 24%, 96%);
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
-.reviews {
-    margin: 10px 40px;
+#reviews {
+    margin: 40px 80px 0px 0px;
 
 }
 
-.guru {
-    margin: 10px 80px;
+#guru {
+    margin: 40px 40px 0px 0px;
 }
 
-.bestTech {
-    margin: 10px 120px;
+#bestTech {
+    margin: 40px 0px 0px 0px;
 }
 
 .starBox {
     display: flex;
     height: 30px;
-    width: 120px;
-    background-size: 20px;
+    width: 140px;
+    margin-right: 40px;
+    align-items: center;
+    justify-content: space-around;
     }
 
 .star {
     height: 20px;
-    width: 20px;
-    margin: 5px;
+    width: 40px;
     background-image: url('./images/icon-star.svg');
-    background-size: contain;
+    background-size: 20px;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -95,50 +108,136 @@ main {
 .bottomContainer {
     display: flex;
     align-items:flex-start;
+    justify-content: center;
     background-image: url("./images/bg-pattern-bottom-desktop.svg");
     background-size: cover;
     height: 50%;
-    width: 1175px;
+    width: 1200px;
 }
 
 .bottomSection {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .buyerCard {
     display: inline-flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
     color: hsl(300, 24%, 96%);
     background-color: hsl(300, 43%, 22%);
     width: 350px;
     height: 230px;
-    margin: 10px;
-    border-radius: 15px;
+    margin: 10px 0px;
+    border-radius: 10px;
     
 }
 
 .buyerCard img {
     border-radius: 20px;
+    margin: 20px 10px 20px 30px;
 }
 
 .buyerCard span {
     color: hsl(333, 80%, 67%);
 }
 
+.buyerCard p {
+    margin: 20px;
+    letter-spacing: 1px;
+    line-height: 1.25rem;
+    color: hsl(300, 24%, 96%);
+}
+
 .cardStructure {
     display: flex;
+    width: 100%;
+    justify-content: flex-start;
 }
 
 .colton {
-    margin-top: 0px;
+    margin: 0 10px 0 0;
 }
 
 .irene {
-    margin-top: 10px;
+    margin: 10px 10px 0 0;
 }
 
 .anne {
-    margin-top: 20px;
+    margin: 20px 0 0 0;
+}
+
+@media only screen and (max-width: 1175px) {
+    main {
+        height: fit-content;
+    }
+
+    .mainText {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .mainText h1 {
+        font-size: 3rem;
+    }
+
+    .mainText p {
+        font-size: 1rem;
+    }
+
+
+    .topContainer {
+        width: 375px;
+    }
+
+    .bottomContainer {
+        width: 375px;
+    }
+
+    .topSection {
+        flex-direction: column;
+    }
+    
+    .bottomSection {
+        flex-direction: column;
+    }
+
+    .ratingsSection {
+        width: 100%;
+        margin: 20px 0px;
+    }
+
+    .ratingBox {
+        height: 100px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .starBox {
+        margin-bottom: 10px;
+    }
+    .ratingBox p {
+    }
+
+    #reviews {
+        margin: 10px 0;   
+    }
+
+    
+    #guru {
+        margin: 10px 0px;
+    }
+    
+    #bestTech {
+        margin: 10px 0px;
+    }
+
+    .buyerCard {
+        width: 100%;
+    }
 }
 
