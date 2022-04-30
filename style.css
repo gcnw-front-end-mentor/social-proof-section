@@ -19,6 +19,7 @@ main {
     align-items: center;
     height: 100vh;
     width: 100%;
+
 }
 
 .topContainer {
@@ -34,7 +35,6 @@ main {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
 }
 
 .mainText {
@@ -44,6 +44,7 @@ main {
 .mainText h1 {
     color: hsl(300, 43%, 22%);
     font-size: 4rem;
+    font-weight: 700;
 }
 
 .mainText p {
@@ -54,7 +55,6 @@ main {
 }
 
 .ratingsSection {
-    /* width: 60%; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -67,7 +67,6 @@ main {
     font-weight: 700;
     height: 55px;
     width: 435px;
-    /* margin-top: 10px; */
     color: hsl(300, 43%, 22%);
     background-color: hsl(300, 24%, 96%);
     border-radius: 5px;
@@ -147,7 +146,7 @@ main {
 .buyerCard p {
     margin: 20px;
     letter-spacing: 1px;
-    line-height: 1.25rem;
+    line-height: 1.5rem;
     color: hsl(300, 24%, 96%);
 }
 
@@ -169,11 +168,11 @@ main {
     margin: 20px 0 0 0;
 }
 
-@media only screen and (max-width: 1175px) {
-    main {
-        height: fit-content;
-    }
+/*MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE */
+/*MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE */
+/*MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE */
 
+@media only screen and (max-width: 1175px) {
     .mainText {
         width: 100%;
         text-align: center;
@@ -185,17 +184,26 @@ main {
     }
 
     .mainText p {
-        font-size: 1rem;
+        font-size: 1.25rem;
+        margin: 20px 0px 10px 0px;
     }
 
 
     .topContainer {
-        width: 375px;
+        width: 325px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 15px;
+
     }
 
     .bottomContainer {
-        width: 375px;
-    }
+        width: 325px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: fit-content;
+   }
 
     .topSection {
         flex-direction: column;
@@ -203,37 +211,36 @@ main {
     
     .bottomSection {
         flex-direction: column;
+        justify-content: center;
     }
 
     .ratingsSection {
         width: 100%;
-        margin: 20px 0px;
+        margin-bottom: 20px;
     }
 
     .ratingBox {
-        height: 100px;
+        height: 75px;
         width: 100%;
         flex-direction: column;
         justify-content: center;
+        border-radius: 15px;
     }
 
     .starBox {
-        margin-bottom: 10px;
-    }
-    .ratingBox p {
+        margin: 0 0 10px 0;
     }
 
     #reviews {
         margin: 10px 0;   
     }
-
     
     #guru {
-        margin: 10px 0px;
+        margin: 10px 0;
     }
     
     #bestTech {
-        margin: 10px 0px;
+        margin: 10px 0;
     }
 
     .buyerCard {
