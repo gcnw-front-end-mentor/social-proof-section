@@ -134,26 +134,33 @@ main {
     
 }
 
-.buyerCard img {
+.cardStructure {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.cardStructure img {
     border-radius: 20px;
     margin: 20px 10px 20px 30px;
 }
 
-.buyerCard span {
+.cardStructure p {
+    margin: 0;
+    line-height: 1.25rem;
+
+}
+
+.cardStructure span {
     color: hsl(333, 80%, 67%);
 }
 
-.buyerCard p {
-    margin: 20px;
+.quote {
+    margin: 10px 20px 20px 20px;
     letter-spacing: 1px;
     line-height: 1.5rem;
     color: hsl(300, 24%, 96%);
-}
 
-.cardStructure {
-    display: flex;
-    width: 100%;
-    justify-content: flex-start;
 }
 
 .colton {
@@ -161,11 +168,11 @@ main {
 }
 
 .irene {
-    margin: 10px 10px 0 0;
+    margin: 20px 10px 0 0;
 }
 
 .anne {
-    margin: 20px 0 0 0;
+    margin: 40px 0 0 0;
 }
 
 /*MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE | MOBILE DEVICE */
@@ -245,6 +252,22 @@ main {
 
     .buyerCard {
         width: 100%;
+    }
+
+    .quote {
+        margin: 0px 20px 20px;
+    }
+
+    .colton {
+        margin: 10px 10px 0 0;
+    }
+    
+    .irene {
+        margin: 10px 10px 0 0;
+    }
+    
+    .anne {
+        margin: 10px 10px 0 0;
     }
 }
 
